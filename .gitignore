@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# macOS metadata
+.DS_Store
+
+# Python package metadata
+*.egg-info/
+dist/
+build/
+
+# Perceptron cache files
+perceptron_cache/
+
+#mypy
+.mypy_cache/
+.dmypy.json/
+
+#Pyre type cheker
+.pyre/
