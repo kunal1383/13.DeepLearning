@@ -8,15 +8,15 @@ def main(data ,modelName ,plotName ,eta ,epochs):
     X ,y = prepare_data(df_OR)
     
     # ETA = learning rate
-    model_or = Perceptron(eta = ETA , epochs=EPOCHS)
-    model_or.fit(X,y)
+    model = Perceptron(eta = ETA , epochs=EPOCHS)
+    model.fit(X,y)
 
     # _ is just dumy variable
-    _ = model_or.total_loss()
+    _ = model.total_loss()
 
 
-    model_or.save(filename=modelName ,path='model_or')
-    save_plot(df_OR ,model_or ,filename=plotName)
+    model.save(filename=modelName ,path='model_or')
+    save_plot(df_OR ,model ,filename=plotName)
     
 
 if __name__ == "__main__":
